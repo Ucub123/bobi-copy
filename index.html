@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Money Management Web App</title>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar" style="display:none;">
+        <div class="menu dashboard" id="dashboard">Dashboard</div>
+        <div class="menu incomes" id="incomes">Incomes</div>
+        <div class="menu spendings" id="spendings">Spendings</div>
+        <div class="menu settings" id="settings">Settings</div>
+    </div>  
+
+    <!-- Login Page -->
+    <div id="login-page" class="login-container">
+        <form id="login-form">
+            <h1>Login</h1>
+            <img src="pngtree-the-concept-of-saving-and-investing-for-the-long-term-image_15908151.jpg" alt="Logo Sidebar" class="sidebar-logo">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required placeholder="Enter your username">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Konten akan ditambahkan dinamis melalui JavaScript -->
+    <div id="content" class="content" style="display:none;"></div>
+
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+/* Reset Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #865cff;
+    color: white;
+    width: 250px; /* Lebar Sidebar yang lebih besar */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 50px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.menu {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+    transition: all 0.3s ease;
+}
+
+.menu:hover,
+.menu.active {
+    background-color: white;
+    color: #865cff;
+}
+
+/* Konten Utama */
+.content {
+    margin-left: 250px; /* Memberikan ruang untuk sidebar */
+    padding: 30px;
+    width: calc(100% - 250px); /* Mengatur lebar konten utama agar sesuai dengan ruang yang tersisa */
+    background-color: #f9f9f9;
+    overflow-y: auto;
+    height: 100%;
+}
+
+/* Dashboard Summary */
+.dashboard-summary {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    flex: 1 1 calc(25% - 20px);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #865cff;
+}
+
+/* Form */
+form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input,
+form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+}
+
+table tbody tr:hover {
+    background-color: #f9f9f9;
+}
